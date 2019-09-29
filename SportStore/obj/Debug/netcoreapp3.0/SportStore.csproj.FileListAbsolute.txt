@@ -57,3 +57,4 @@ E:\sportstore\SportStore\SportStore\bin\Debug\netcoreapp3.0\runtimes\win\lib\net
 E:\sportstore\SportStore\SportStore\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\sportstore\SportStore\SportStore\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.MvcApplicationPartsAssemblyInfo.cache
+E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.csprojAssemblyReference.cache

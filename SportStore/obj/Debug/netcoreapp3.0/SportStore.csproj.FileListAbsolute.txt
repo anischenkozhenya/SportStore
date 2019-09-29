@@ -57,3 +57,4 @@ E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.Views.pdb
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.csproj.CopyComplete
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.dll
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.pdb
+e:\Sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.csprojAssemblyReference.cache

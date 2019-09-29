@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj": {}
+    "e:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj": {}
   },
   "projects": {
-    "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj": {
+    "e:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj",
+        "projectUniqueName": "e:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj",
         "projectName": "SportStore",
-        "projectPath": "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj",
+        "projectPath": "e:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj",
         "packagesPath": "C:\\Users\\Madara\\.nuget\\packages\\",
-        "outputPath": "E:\\sportstore\\SportStore\\SportStore\\obj\\",
+        "outputPath": "e:\\Sportstore\\SportStore\\SportStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -35,12 +35,18 @@ namespace SportStore
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
         {
-            app.UseDeveloperExceptionPage();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
+            }
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvc(routes=>
             {
-            routes.MapRoute(name: "default", template: "{controller=Product}/{action=List}/{id?}");
+                routes.MapRoute(name: "pagination", template: "Products/Page{page}", defaults: new { Controller = "Product", action = "List" });
+                routes.MapRoute(name: "default", template: "{controller=Product}/{action=List}/{id?}");
+            
             });
             SeedData.EnsurePopulated(app);
         }

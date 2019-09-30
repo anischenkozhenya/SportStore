@@ -55,6 +55,13 @@ namespace SportStore.Models
                         Price = 16
                     },
                     new Product
+                     {
+                         Name = "Unsteady Chair",
+                         Description = "Secretly give your opponent a disadvantage",
+                         Category = "Chess",
+                         Price = 29.95M
+                     },
+                    new Product
                     {
                         Name = "Human Chess Board",
                         Description = "A fun game for the famoly",

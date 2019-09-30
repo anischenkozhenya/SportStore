@@ -3,11 +3,27 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/css/*.min.css" />
     <title>SportStore</title>
 </head>
 <body>
-    <div>
+    <div class="navbar navbar-inverse" role="navigation">
+        <a class="navbar-brand" href="#">SPORT STORE</a>
+    </div>
+    <div class="row panel">
+        <div id="categories" class="col-xs-3">
+            Put something useful here later
+        </div>
+    </div>
+    <div class="col-xs-8">
         @RenderBody()
     </div>
+
+    <!-- Visual Studio Browser Link -->
+    <script type="application/json" id="__browserLink_initializationData">
+        {"requestId":"a717d5a07c1741949a7cefd6fa2bad08","requestMappingFromServer":false}
+    </script>
+    <script type="text/javascript" src="http://localhost:54139/b6e36e429d034f578ebccd6a79bf19bf/browserLink" async="async"></script>
+    <!-- End Browser Link -->
 </body>
 </html>

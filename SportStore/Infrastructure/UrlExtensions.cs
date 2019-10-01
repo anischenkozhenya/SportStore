@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SportStore.Infrastucture
+namespace SportStore.Infrastructure
 {
     public static class UrlExtensions
     {

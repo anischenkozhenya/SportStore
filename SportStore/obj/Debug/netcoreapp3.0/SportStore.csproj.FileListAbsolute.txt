@@ -61,3 +61,4 @@ E:\sportstore\SportStore\SportStore\bin\Debug\netcoreapp3.0\libman.json
 E:\sportstore\SportStore\SportStore\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.BrowserLink.dll
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.MvcApplicationPartsAssemblyInfo.cache
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\ProductSummary.cshtml.g.cs
+E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs

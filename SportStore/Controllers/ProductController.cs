@@ -1,41 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc;
 using SportStore.Models;
-using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using SportStore.Models.ViewModels;
+
 namespace SportStore.Controllers
-{
-    public class ProductController:Controller
+{    public class ProductController : Controller
     {
         private IProductRepository repository;
-        public int PageSize =4;
+        public int PageSize = 4;
+
         public ProductController(IProductRepository repo)
         {
             repository = repo;
         }
-        public ViewResult List(string category,int page=1) 
-            ////=> View
-            ////(repository.Products
-            => View
-            (new ProductsListViewModel
+        public ViewResult List(string category, int productPage = 1)
+            => View(new ProductsListViewModel
             {
                 Products = repository.Products
-                .Where(p=>category==null||p.Category==category)
-            .OrderBy(p => p.ProductID)
-            .Skip((page - 1) * PageSize)
-            .Take(PageSize),
+                    .Where(p => category == null || p.Category == category)
+                    .OrderBy(p => p.ProductID)
+                    .Skip((productPage - 1) * PageSize)
+                    .Take(PageSize),
                 PagingInfo = new PagingInfo
                 {
-                    CurrentPage = page,
+                    CurrentPage = productPage,
                     ItemsPerPage = PageSize,
-                    TotalItems = repository.Products.Count()
+                    TotalItems = category == null ?
+                        repository.Products.Count() :
+                        repository.Products.Where(e =>
+                            e.Category == category).Count()
                 },
-                CurrentCategory=category
+                CurrentCategory = category
             });
-        ////.OrderBy(p=>p.ProductID)
-        ////.Skip((page-1)*PageSize)
-        ////.Take(PageSize));
     }
 }

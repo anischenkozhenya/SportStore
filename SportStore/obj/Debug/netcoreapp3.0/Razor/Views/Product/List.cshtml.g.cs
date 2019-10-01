@@ -27,6 +27,31 @@ using SportStore.Models.ViewModels;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"11861064903b8f7ae9a36ded2e5db7277307e191", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ProductsListViewModel>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("page-action", "List", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("page-class", "btn", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("page-class-normal", "btn-default", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("page-class-slected", new global::Microsoft.AspNetCore.Html.HtmlString("btn-primary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("page-class-selected", "btn-primary", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_5 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn-group pull-right"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::SportStore.Infrastructure.PageLinkTagHelper __SportStore_Infrastructure_PageLinkTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -50,28 +75,54 @@ Write(Html.Partial("ProductSummary", p));
 
 #line default
 #line hidden
-            BeginContext(112, 4, true);
-            WriteLiteral("<div");
-            EndContext();
-            BeginWriteAttribute("page-model", " page-model=\"", 116, "\"", 146, 1);
+            BeginContext(112, 303, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd3eb98231731ebe384ba2832347b2325f898c685504", async() => {
+                BeginContext(407, 2, true);
+                WriteLiteral("\r\n");
+                EndContext();
+            }
+            );
+            __SportStore_Infrastructure_PageLinkTagHelper = CreateTagHelper<global::SportStore.Infrastructure.PageLinkTagHelper>();
+            __tagHelperExecutionContext.Add(__SportStore_Infrastructure_PageLinkTagHelper);
 #line 6 "E:\sportstore\SportStore\SportStore\Views\Product\List.cshtml"
-WriteAttributeValue("", 129, Model.PagingInfo, 129, 17, false);
+__SportStore_Infrastructure_PageLinkTagHelper.PageModel = Model.PagingInfo;
 
 #line default
 #line hidden
-            EndWriteAttribute();
-            BeginContext(147, 147, true);
-            WriteLiteral(" page-action=\"List\"\r\n     page-classes-enabled=\"true\"\r\n     page-class=\"btn\" page-class-normal=\"btn-default\"\r\n     page-class-slected=\"btn-primary\"");
-            EndContext();
-            BeginWriteAttribute("page-url-category", " page-url-category=\"", 294, "\"", 336, 1);
+            __tagHelperExecutionContext.AddTagHelperAttribute("page-model", __SportStore_Infrastructure_PageLinkTagHelper.PageModel, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            __SportStore_Infrastructure_PageLinkTagHelper.PageAction = (string)__tagHelperAttribute_0.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+#line 7 "E:\sportstore\SportStore\SportStore\Views\Product\List.cshtml"
+__SportStore_Infrastructure_PageLinkTagHelper.PageClassesEnabled = true;
+
+#line default
+#line hidden
+            __tagHelperExecutionContext.AddTagHelperAttribute("page-classes-enabled", __SportStore_Infrastructure_PageLinkTagHelper.PageClassesEnabled, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            __SportStore_Infrastructure_PageLinkTagHelper.PageClass = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            __SportStore_Infrastructure_PageLinkTagHelper.PageClassNormal = (string)__tagHelperAttribute_2.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_2);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
+            if (__SportStore_Infrastructure_PageLinkTagHelper.PageUrlValues == null)
+            {
+                throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("page-url-category", "SportStore.Infrastructure.PageLinkTagHelper", "PageUrlValues"));
+            }
 #line 9 "E:\sportstore\SportStore\SportStore\Views\Product\List.cshtml"
-WriteAttributeValue("", 314, Model.CurrentCategory, 314, 22, false);
+__SportStore_Infrastructure_PageLinkTagHelper.PageUrlValues["category"] = Model.CurrentCategory;
 
 #line default
 #line hidden
-            EndWriteAttribute();
-            BeginContext(337, 78, true);
-            WriteLiteral("\r\n     page-class-selected=\"btn-primary\" class=\"btn-group pull-right\">\r\n</div>");
+            __tagHelperExecutionContext.AddTagHelperAttribute("page-url-category", __SportStore_Infrastructure_PageLinkTagHelper.PageUrlValues["category"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            __SportStore_Infrastructure_PageLinkTagHelper.PageClassSelected = (string)__tagHelperAttribute_4.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_5);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
             EndContext();
         }
         #pragma warning restore 1998

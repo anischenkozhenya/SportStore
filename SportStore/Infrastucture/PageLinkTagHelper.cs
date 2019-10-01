@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using SportStore.Models.ViewModels;
 using System.Collections.Generic;
 
-namespace SportsStore.Infrastructure
+namespace SportStore.Infrastructure
 {
 
     [HtmlTargetElement("div", Attributes = "page-model")]

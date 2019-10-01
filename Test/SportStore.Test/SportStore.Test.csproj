@@ -21,7 +21,7 @@
 
   
   <ItemGroup>
-    <ProjectReference Include="..\..\SportStore\SportStore\SportStore.csproj" />
+    <ProjectReference Include="..\..\SportStore\SportStore.csproj" />
   </ItemGroup>
 
 </Project>

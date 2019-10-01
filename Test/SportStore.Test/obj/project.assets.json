@@ -754,6 +754,22 @@
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Session/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Session.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Session.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.StaticFiles/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1754,6 +1770,21 @@
         },
         "build": {
           "build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props": {}
+        }
+      },
+      "Microsoft.VisualStudio.Web.BrowserLink/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Physical": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.VisualStudio.Web.BrowserLink.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualStudio.Web.BrowserLink.dll": {}
         }
       },
       "Microsoft.Win32.Registry/4.5.0": {
@@ -3623,13 +3654,17 @@
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Razor": "2.2.0",
           "Microsoft.AspNetCore.Server.IISIntegration": "2.2.1",
           "Microsoft.AspNetCore.Server.Kestrel": "2.2.0",
+          "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.AspNetCore.StaticFiles": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
-          "Microsoft.Extensions.Configuration.Json": "3.0.0"
+          "Microsoft.Extensions.Caching.Memory": "3.0.0",
+          "Microsoft.Extensions.Configuration.Json": "3.0.0",
+          "Microsoft.VisualStudio.Web.BrowserLink": "2.2.0"
         },
         "compile": {
           "bin/placeholder/SportStore.dll": {}
@@ -4343,6 +4378,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml",
         "microsoft.aspnetcore.server.kestrel.transport.sockets.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.server.kestrel.transport.sockets.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Session/2.2.0": {
+      "sha512": "lOjJVh293AKaOEPi1MIC1/G9gOVZMrve2a05o56oslK6bo0PMgMB17rmPomvqrJAjMdlWZ/MGdN2y78Z9wzWTw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.session/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Session.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Session.xml",
+        "microsoft.aspnetcore.session.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.session.nuspec"
       ]
     },
     "Microsoft.AspNetCore.StaticFiles/2.2.0": {
@@ -5635,6 +5683,19 @@
         "lib/uap10.0/testhost.dll",
         "microsoft.testplatform.testhost.16.3.0.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Web.BrowserLink/2.2.0": {
+      "sha512": "cmeqhbB+rdMia3bj6cJaKQw1GDOqHxzDWAjoJqCnz+JYi9a2xsBdzycYy9eMEssVwLmLAUw6sWLMPMfGXAQmWA==",
+      "type": "package",
+      "path": "microsoft.visualstudio.web.browserlink/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.VisualStudio.Web.BrowserLink.dll",
+        "lib/netstandard2.0/Microsoft.VisualStudio.Web.BrowserLink.xml",
+        "microsoft.visualstudio.web.browserlink.2.2.0.nupkg.sha512",
+        "microsoft.visualstudio.web.browserlink.nuspec"
       ]
     },
     "Microsoft.Win32.Registry/4.5.0": {
@@ -10676,8 +10737,8 @@
     },
     "SportStore/1.0.0": {
       "type": "project",
-      "path": "../../SportStore/SportStore/SportStore.csproj",
-      "msbuildProject": "../../SportStore/SportStore/SportStore.csproj"
+      "path": "../../SportStore/SportStore.csproj",
+      "msbuildProject": "../../SportStore/SportStore.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10700,11 +10761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Sportstore\\Test\\SportStore.Test\\SportStore.Test.csproj",
+      "projectUniqueName": "E:\\Sportstore\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj",
       "projectName": "SportStore.Test",
-      "projectPath": "e:\\Sportstore\\Test\\SportStore.Test\\SportStore.Test.csproj",
+      "projectPath": "E:\\Sportstore\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj",
       "packagesPath": "C:\\Users\\Madara\\.nuget\\packages\\",
-      "outputPath": "e:\\Sportstore\\Test\\SportStore.Test\\obj\\",
+      "outputPath": "E:\\Sportstore\\SportStore\\Test\\SportStore.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10723,8 +10784,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "e:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj": {
-              "projectPath": "e:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj"
+            "E:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj": {
+              "projectPath": "E:\\Sportstore\\SportStore\\SportStore\\SportStore.csproj"
             }
           }
         }

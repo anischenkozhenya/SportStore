@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using SportStore.Models;
 using SportStore.Infrastructure;
+using SportStore.Models.ViewModels;
 
 namespace SportStore.Controllers
 {
@@ -48,6 +49,15 @@ namespace SportStore.Controllers
         {
             Cart cart = HttpContext.Session.GetJson<Cart>("Cart") ?? new Cart();
             return cart;
+        }
+
+        public ViewResult Index(string returnUrl)
+        {
+            return View(new CartIndexViewModel
+            {
+                Cart = GetCart(),
+                ReturnUrl=returnUrl
+            });
         }
     }
 }

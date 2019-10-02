@@ -64,3 +64,4 @@ E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\C
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.MvcApplicationPartsAssemblyInfo.cache
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Cart\Index.cshtml.g.cs
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\CartSummary\Default.cshtml.g.cs
+E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Order\Checkout.cshtml.g.cs

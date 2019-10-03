@@ -68,3 +68,4 @@ E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.dll
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.pdb
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Order\List.cshtml.g.cs
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Admin\Index.cshtml.g.cs

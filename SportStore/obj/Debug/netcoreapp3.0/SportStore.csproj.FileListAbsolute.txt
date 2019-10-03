@@ -66,3 +66,5 @@ E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.Views.pdb
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.csproj.CopyComplete
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.dll
 E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.pdb
+E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Order\List.cshtml.g.cs
+E:\sportstore\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs

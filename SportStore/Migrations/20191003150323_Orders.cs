@@ -2,7 +2,7 @@
 
 namespace SportStore.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Orders : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

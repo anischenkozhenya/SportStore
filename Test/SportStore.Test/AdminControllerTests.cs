@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
 using SportStore.Controllers;
 using SportStore.Models;
@@ -66,7 +67,49 @@ namespace SportStore.Test
             Assert.Null(result);
         }
 
-            private T GetViewModel<T>(IActionResult result) where T:class
+        [Fact]
+        public void Can_Save_Valid_Changes()
+        {
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            Mock<ITempDataDictionary> tempData = new Mock<ITempDataDictionary>();
+            AdminController target = new AdminController(mock.Object)
+            {
+                TempData = tempData.Object
+            };
+            Product product = new Product { Name = "Test" };
+            IActionResult result = target.Edit(product);
+            mock.Verify(m => m.SaveProduct(product));
+            Assert.IsType<RedirectToActionResult>(result);
+            Assert.Equal("Index", (result as RedirectToActionResult).ActionName);
+        }
+        [Fact]
+        public void Cannot_Save_Invalid_Changes()
+        {
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            AdminController target = new AdminController(mock.Object);
+            Product product = new Product { Name = "Test" };
+            target.ModelState.AddModelError("error", "error");
+            IActionResult result = target.Edit(product);
+            mock.Verify(m=>m.SaveProduct(It.IsAny<Product>()),Times.Never());
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void Can_delete_Valid_Products()
+        {
+            Product prod = new Product { ProductID=2, Name="Test" };
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[]
+            {
+                new Product{ProductID=1,Name="P1"},prod,
+                new Product{ProductID=3,Name="P3",}
+            });
+            AdminController target = new AdminController(mock.Object);
+            target.Delete(prod.ProductID);
+            mock.Verify(m=>m.DeleteProduct(prod.ProductID));
+        }
+
+        private T GetViewModel<T>(IActionResult result) where T:class
         {
             return (result as ViewResult)?.ViewData.Model as T;
         }

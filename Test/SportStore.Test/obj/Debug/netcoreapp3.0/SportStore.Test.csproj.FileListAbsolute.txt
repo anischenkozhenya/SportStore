@@ -268,3 +268,4 @@ E:\Sportstore\SportStore\Test\SportStore.Test\obj\Debug\netcoreapp3.0\SportStore
 E:\Sportstore\SportStore\Test\SportStore.Test\obj\Debug\netcoreapp3.0\SportStore.Test.csproj.CopyComplete
 E:\Sportstore\SportStore\Test\SportStore.Test\obj\Debug\netcoreapp3.0\SportStore.Test.dll
 E:\Sportstore\SportStore\Test\SportStore.Test\obj\Debug\netcoreapp3.0\SportStore.Test.pdb
+E:\SportStore\Test\SportStore.Test\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

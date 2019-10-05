@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\sportstore\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj": {}
+    "E:\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj": {}
   },
   "projects": {
-    "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj": {
+    "E:\\SportStore\\SportStore\\SportStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj",
+        "projectUniqueName": "E:\\SportStore\\SportStore\\SportStore.csproj",
         "projectName": "SportStore",
-        "projectPath": "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj",
+        "projectPath": "E:\\SportStore\\SportStore\\SportStore.csproj",
         "packagesPath": "C:\\Users\\Madara\\.nuget\\packages\\",
-        "outputPath": "E:\\sportstore\\SportStore\\SportStore\\obj\\",
+        "outputPath": "E:\\SportStore\\SportStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -48,6 +48,10 @@
             "Microsoft.AspNetCore.Http.Extensions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
@@ -118,14 +122,14 @@
         }
       }
     },
-    "E:\\sportstore\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj": {
+    "E:\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sportstore\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj",
+        "projectUniqueName": "E:\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj",
         "projectName": "SportStore.Test",
-        "projectPath": "E:\\sportstore\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj",
+        "projectPath": "E:\\SportStore\\Test\\SportStore.Test\\SportStore.Test.csproj",
         "packagesPath": "C:\\Users\\Madara\\.nuget\\packages\\",
-        "outputPath": "E:\\sportstore\\SportStore\\Test\\SportStore.Test\\obj\\",
+        "outputPath": "E:\\SportStore\\Test\\SportStore.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -144,8 +148,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj": {
-                "projectPath": "E:\\sportstore\\SportStore\\SportStore\\SportStore.csproj"
+              "E:\\SportStore\\SportStore\\SportStore.csproj": {
+                "projectPath": "E:\\SportStore\\SportStore\\SportStore.csproj"
               }
             }
           }

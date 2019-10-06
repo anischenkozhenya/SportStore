@@ -21,7 +21,7 @@ namespace SportStore
         IConfigurationRoot Configuration;
         public Startup(IWebHostEnvironment env) 
         {
-            Configuration = new ConfigurationBuilder().SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json").Build();
+            Configuration = new ConfigurationBuilder().SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json").AddJsonFile($"appsettings.{env.EnvironmentName}.json").Build();
         }
 
 
@@ -53,12 +53,20 @@ namespace SportStore
                 app.UseDeveloperExceptionPage();
                 app.UseBrowserLink();
             }
+            else{
+                app.UseExceptionHandler("/Error");
+            }
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseSession();
             app.UseMvc(routes=>
             {
+                routes.MapRoute(
+                    name: "Error",
+                    template: "Error",
+                    defaults: new { Controller = "Error", action = "Error" }
+                    );
                 routes.MapRoute(
                     name: null,
                     template:"{category}/ Page{ page:int}",

@@ -144,3 +144,5 @@ e:\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.pdb
 E:\SportStore\SportStore\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\SportStore\SportStore\obj\Debug\netcoreapp3.0\SportStore.MvcApplicationPartsAssemblyInfo.cache
 E:\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Account\Login.cshtml.g.cs
+e:\SportStore\SportStore\bin\Debug\netcoreapp3.0\appsetting.production.json
+E:\SportStore\SportStore\obj\Debug\netcoreapp3.0\Razor\Views\Error\Error.cshtml.g.cs

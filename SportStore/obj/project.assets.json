@@ -4741,7 +4741,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "sha512": "3A76lQyAUjMr9woMA6Pe/U79dk6R2wsMFCr853zMZz8k1cUhXunbJjqZjQJoS4mS8NtY40IJiwVhXz11YdSdEQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
@@ -9779,11 +9779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SportStore\\SportStore\\SportStore.csproj",
+      "projectUniqueName": "e:\\SportStore\\SportStore\\SportStore.csproj",
       "projectName": "SportStore",
-      "projectPath": "E:\\SportStore\\SportStore\\SportStore.csproj",
+      "projectPath": "e:\\SportStore\\SportStore\\SportStore.csproj",
       "packagesPath": "C:\\Users\\Madara\\.nuget\\packages\\",
-      "outputPath": "E:\\SportStore\\SportStore\\obj\\",
+      "outputPath": "e:\\SportStore\\SportStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

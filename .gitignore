@@ -5,3 +5,4 @@
 .vs/SportStore/v16/Server/sqlite3/storage.ide-shm
 .vs/SportStore/DesignTimeBuild/.dtbcache
 .vs/SportStore/v16/.suo
+SportStore/bin/Debug/netcoreapp3.0/appsetting.production.json
